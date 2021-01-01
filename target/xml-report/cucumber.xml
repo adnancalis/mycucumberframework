@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="187.901">
+<testcase classname="US1001 amazon page search" name="TC01 amazon arama testi" time="32.009">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And iphone icin arama yapar.................................................passed
+Then sonucun iphone icerdigini test eder....................................passed
+Given kullanici amazon anasayfaya gider.....................................passed
+And teapot icin arama yapar.................................................passed
+Then sonucun teapot icerdigini test eder....................................passed
+Given kullanici amazon anasayfaya gider.....................................passed
+And flower icin arama yapar.................................................passed
+Then sonucun flower icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC02_amazon_iphone_arama_testi" time="20.246">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And iphone icin arama yapar.................................................passed
+Then sonucun iphone icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC03_amazon_teapot_arama_testi" time="23.585">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And teapot icin arama yapar.................................................passed
+Then sonucun teapot icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC04_amazon_flower_arama_testi" time="18.714">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And flower icin arama yapar.................................................passed
+Then sonucun flower icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_amazon_search_parametreli" name="TC05_parametre_kullanma" time="13.842">
+<failure message="" type="java.lang.AssertionError"><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+And "abdullah" icin arama yapar.............................................passed
+Then sonucun "cemal" icerdigini test eder...................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinitions.sonucunIcerdiginiTestEder(AmazonStepDefinitions.java:63)
+	at ✽.sonucun "cemal" icerdigini test eder(file:///C:/Users/PC/IdeaProjects/mycucumberframework/src/test/resources/features/US1003_amazon_search_parametreli.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama" time="17.924">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "yasin" icin arama yapar...............................................passed
+And sonucun "yasin" icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_2" time="18.376">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "samsung" icin arama yapar.............................................passed
+And sonucun "samsung" icerdigini test eder..................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_3" time="19.358">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "headphone" icin arama yapar...........................................passed
+And sonucun "headphone" icerdigini test eder................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_4" time="23.251">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "pencil" icin arama yapar..............................................passed
+And sonucun "pencil" icerdigini test eder...................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC02_amazon_iphone_arama_testi" time="102.573">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given kullanici amazon anasayfaya gider.....................................failed
+And iphone icin arama yapar.................................................skipped
+Then sonucun iphone icerdigini test eder....................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC03_amazon_teapot_arama_testi" time="118.419">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given kullanici amazon anasayfaya gider.....................................failed
+And teapot icin arama yapar.................................................skipped
+Then sonucun teapot icerdigini test eder....................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC04_amazon_flower_arama_testi" time="104.798">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given kullanici amazon anasayfaya gider.....................................failed
+And flower icin arama yapar.................................................skipped
+Then sonucun flower icerdigini test eder....................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1003_amazon_search_parametreli" name="TC05_parametre_kullanma" time="112.416">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[When kullanici amazon anasayfaya gider......................................failed
+And "abdullah" icin arama yapar.............................................skipped
+Then sonucun "cemal" icerdigini test eder...................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama" time="109.812">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[When kullanici amazon anasayfaya gider......................................failed
+Then "yasin" icin arama yapar...............................................skipped
+And sonucun "yasin" icerdigini test eder....................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_2" time="108.161">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[When kullanici amazon anasayfaya gider......................................failed
+Then "samsung" icin arama yapar.............................................skipped
+And sonucun "samsung" icerdigini test eder..................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_3" time="109.475">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[When kullanici amazon anasayfaya gider......................................failed
+Then "headphone" icin arama yapar...........................................skipped
+And sonucun "headphone" icerdigini test eder................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_4" time="105.185">
+<failure message="Failed to instantiate class stepdefinitions.AmazonStepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[When kullanici amazon anasayfaya gider......................................failed
+Then "pencil" icin arama yapar..............................................skipped
+And sonucun "pencil" icerdigini test eder...................................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AmazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:99)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)
+	... 41 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at utilities.Driver.getDriver(Driver.java:22)
+	at pages.AmazonPage.<init>(AmazonPage.java:10)
+	at stepdefinitions.AmazonStepDefinitions.<init>(AmazonStepDefinitions.java:14)
+	... 46 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 87.0.4280.88 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 54 more
+]]></failure>
+</testcase>
+</testsuite>

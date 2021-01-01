@@ -1,14 +1,13 @@
 package utilities;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
-    // ilk yapacagimiz sey instance olarak properties objesi olusturmak
-    // bu objeyi static blok icerisinde de kullanacagimdan static yapmam gerekiyor
-    // bu objeyi sadece bu classda kullanacagim icin private yapmamiz onerilir
-    static private Properties properties;
+
+    private static Properties properties;
 
     static {
         String path="configuration.properties";
@@ -24,8 +23,8 @@ public class ConfigReader {
             e.printStackTrace();
         }
     }
-
     public static String getProperty(String key){
+
         return properties.getProperty(key);
     }
 }

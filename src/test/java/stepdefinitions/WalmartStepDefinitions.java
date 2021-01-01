@@ -9,25 +9,23 @@ import pages.WalmartPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-
 public class WalmartStepDefinitions {
-    WalmartPage walmartPage = new WalmartPage();
 
-    @When("kullanici walmart anasayfaya gider")
-    public void kullanici_walmart_anasayfaya_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty("data_table_url"));
+    WalmartPage walmartPage=new WalmartPage();
 
+    @When("kullanici walmart ana sayfaya gider")
+    public void kullanici_walmart_ana_sayfaya_gider() {
+        Driver.getDriver().get(ConfigReader.getProperty("walmart_url"));
     }
 
     @Then("walmart sayfasinda {string} icin arama yapar")
     public void walmart_sayfasinda_icin_arama_yapar(String string) {
-        walmartPage.WalmartAramaKutusu.sendKeys(string + Keys.ENTER);
-
+        walmartPage.walmartAramaKutusu.sendKeys(string+ Keys.ENTER);
     }
 
     @Then("walmartta sayfa basliginin {string} icerdigini test eder")
-    public void walmartta_sayfa_basliginin_icerdigini_test_eder(String string) {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
-
+    public void walmartta_sayfa_basliginin_icerdigini_test_eder(String kelime) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(kelime));
     }
+
 }

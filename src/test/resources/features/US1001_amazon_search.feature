@@ -1,7 +1,8 @@
-Feature: US1002_amazon_search_feature
+Feature: US1001 amazon page search
 
-
+  @amazon
   Scenario: TC01 amazon arama testi
+
     Given kullanici amazon anasayfaya gider
     And iphone icin arama yapar
     Then sonucun iphone icerdigini test eder

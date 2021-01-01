@@ -9,9 +9,9 @@ public class WalmartPage {
 
     public WalmartPage(){
         PageFactory.initElements(Driver.getDriver(),this);
-
     }
-    @FindBy(id="global-search-input")
-    public WebElement WalmartAramaKutusu;
+
+    @FindBy (id="global-search-input")
+    public WebElement walmartAramaKutusu;
 
 }
