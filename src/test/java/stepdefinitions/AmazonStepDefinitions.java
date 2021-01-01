@@ -1,4 +1,5 @@
 package stepdefinitions;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,6 +9,7 @@ import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+
 public class AmazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
 
@@ -28,6 +30,7 @@ public class AmazonStepDefinitions {
     public void tea_pot_icin_arama_yapar() {
         amazonPage.searchbox.sendKeys("teapot"+ Keys.ENTER);
     }
+
     @Then("sonucun teapot icerdigini test eder")
     public void sonucun_tea_pot_icerdigini_test_eder() {
         Assert.assertTrue(amazonPage.sonucYaziElementi.getText().contains("teapot"));
@@ -36,23 +39,27 @@ public class AmazonStepDefinitions {
     public void flower_icin_arama_yapar() {
         amazonPage.searchbox.sendKeys("flower"+ Keys.ENTER);
     }
+
     @Then("sonucun flower icerdigini test eder")
     public void sonucun_flower_icerdigini_test_eder() {
         Assert.assertTrue(amazonPage.sonucYaziElementi.getText().contains("flower"));
     }
+
 
     @And("kullanici sayfayi kapatir")
     public void kullaniciSayfayiKapatir() {
         Driver.closeDriver();
     }
 
-    @When("{string} icin arama yapar")
-    public void icin_arama_yapar(String arananKelime) {
-        amazonPage.searchbox.sendKeys(arananKelime+Keys.ENTER);
+
+    @And("{string} icin arama yapar")
+    public void icinAramaYapar(String kelime) {
+
+        amazonPage.searchbox.sendKeys(kelime+Keys.ENTER);
     }
 
     @Then("sonucun {string} icerdigini test eder")
-    public void sonucun_icerdigini_test_eder(String arananKelime) {
-        Assert.assertTrue(amazonPage.sonucYaziElementi.getText().contains(arananKelime));
+    public void sonucunIcerdiginiTestEder(String kelime) {
+        Assert.assertTrue(amazonPage.sonucYaziElementi.getText().contains(kelime));
     }
 }
